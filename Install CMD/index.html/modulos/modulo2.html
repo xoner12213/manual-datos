@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2 - Datos y Modelo</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2>📊 Manual de Datos</h2>
+        <ul>
+            <li><a href="../Indexx.html">Inicio</a></li>
+            <li><a href="../index.html#modulos">Módulos</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1>Módulo 2: Construcción del Modelo de Datos</h1>
+        <p>De datos crudos a información confiable</p>
+    </header>
+
+    <!-- NODO 1 -->
+    <section class="contenedor">
+        <h2>🧠 Nodo 1: ¿Por qué datos limpios?</h2>
+
+        <p>
+            Los datos limpios no son un requisito técnico, son una condición estratégica para
+            tomar decisiones correctas.
+        </p>
+
+        <ul>
+            <li><strong>Eliminación de inconsistencias:</strong> evitar errores manuales</li>
+            <li><strong>Integridad referencial:</strong> coincidencia entre ClienteID y SKU</li>
+            <li><strong>Estandarización:</strong> datos homogéneos para análisis</li>
+        </ul>
+    </section>
+
+    <!-- NODO 2 -->
+    <section class="contenedor">
+        <h2>📁 Nodo 2: Origen de la información</h2>
+
+        <p>El modelo se construye a partir de múltiples fuentes:</p>
+
+        <ul>
+            <li>clientes.csv</li>
+            <li>cartera_actual.csv</li>
+            <li>recaudo.csv</li>
+            <li>inventario.csv</li>
+            <li>ventas_ultimos_3_meses.csv</li>
+        </ul>
+
+        <p>
+            Todos los datos deben ser importados mediante Power Query o un proceso reproducible.
+        </p>
+    </section>
+
+    <!-- NODO 3 -->
+    <section class="contenedor">
+        <h2>🏗 Nodo 3: Arquitectura del modelo</h2>
+
+        <h3>🔑 Identificadores (Dimensiones)</h3>
+        <ul>
+            <li>ClienteID</li>
+            <li>SKU</li>
+            <li>OrdenID</li>
+        </ul>
+
+        <h3>💰 Métricas financieras</h3>
+        <ul>
+            <li>PrecioUnit</li>
+            <li>ValorOrden (Unidades × PrecioUnit)</li>
+            <li>ValorRecaudo</li>
+            <li>Comisión (2% del recaudo)</li>
+        </ul>
+
+        <h3>📊 Segmentación</h3>
+        <ul>
+            <li>Ciudad</li>
+            <li>Canal</li>
+            <li>Segmento</li>
+            <li>Formalidad</li>
+        </ul>
+    </section>
+
+    <!-- NODO 4 -->
+    <section class="contenedor">
+        <h2>⚙️ Nodo 4: Transformaciones en Power Query</h2>
+
+        <h3>🧹 Limpieza y normalización</h3>
+        <ul>
+            <li>Texto limpio</li>
+            <li>Conversión a mayúsculas</li>
+            <li>Eliminación de inconsistencias</li>
+        </ul>
+
+        <h3>📊 Lógica de riesgo</h3>
+        <p>Clasificación basada en días de mora:</p>
+
+        <ul>
+            <li>Mora leve: &lt; 30 días</li>
+            <li>Riesgo medio: 31 - 60 días</li>
+            <li>Riesgo alto: &gt; 60 días</li>
+        </ul>
+
+        <h3>🔢 Tipificación técnica</h3>
+        <ul>
+            <li>Fechas → tipo fecha</li>
+            <li>Valores → moneda (COP)</li>
+        </ul>
+    </section>
+
+    <!-- RESULTADO -->
+    <section class="contenedor">
+        <h2>🎯 Resultado esperado</h2>
+
+        <p>
+            Un modelo de datos limpio, estructurado y listo para alimentar el análisis,
+            garantizando trazabilidad y confiabilidad en la toma de decisiones.
+        </p>
+    </section>
+
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Módulo 2 - Datos y Modelo</title>
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+
+    <body>
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <h2>📊 Manual de Datos</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html#modulos">Módulos</a></li>
+            </ul>
+        </nav>
+
+        <!-- HERO -->
+        <header class="hero">
+            <h1>Módulo 2: Construcción del Modelo de Datos</h1>
+            <p>De datos crudos a información confiable</p>
+        </header>
+
+        <!-- NODO 1 -->
+        <section class="contenedor">
+            <h2>🧠 Nodo 1: ¿Por qué datos limpios?</h2>
+
+            <p>
+                Los datos limpios no son un requisito técnico, son una condición estratégica para
+                tomar decisiones correctas.
+            </p>
+
+            <ul>
+                <li><strong>Eliminación de inconsistencias:</strong> evitar errores manuales</li>
+                <li><strong>Integridad referencial:</strong> coincidencia entre ClienteID y SKU</li>
+                <li><strong>Estandarización:</strong> datos homogéneos para análisis</li>
+            </ul>
+        </section>
+
+        <!-- NODO 2 -->
+        <section class="contenedor">
+            <h2>📁 Nodo 2: Origen de la información</h2>
+
+            <p>El modelo se construye a partir de múltiples fuentes:</p>
+
+            <ul>
+                <li>clientes.csv</li>
+                <li>cartera_actual.csv</li>
+                <li>recaudo.csv</li>
+                <li>inventario.csv</li>
+                <li>ventas_ultimos_3_meses.csv</li>
+            </ul>
+
+            <p>
+                Todos los datos deben ser importados mediante Power Query o un proceso reproducible.
+            </p>
+        </section>
+
+        <!-- NODO 3 -->
+        <section class="contenedor">
+            <h2>🏗 Nodo 3: Arquitectura del modelo</h2>
+
+            <h3>🔑 Identificadores (Dimensiones)</h3>
+            <ul>
+                <li>ClienteID</li>
+                <li>SKU</li>
+                <li>OrdenID</li>
+            </ul>
+
+            <h3>💰 Métricas financieras</h3>
+            <ul>
+                <li>PrecioUnit</li>
+                <li>ValorOrden (Unidades × PrecioUnit)</li>
+                <li>ValorRecaudo</li>
+                <li>Comisión (2% del recaudo)</li>
+            </ul>
+
+            <h3>📊 Segmentación</h3>
+            <ul>
+                <li>Ciudad</li>
+                <li>Canal</li>
+                <li>Segmento</li>
+                <li>Formalidad</li>
+            </ul>
+        </section>
+
+        <!-- NODO 4 -->
+        <section class="contenedor">
+            <h2>⚙️ Nodo 4: Transformaciones en Power Query</h2>
+
+            <h3>🧹 Limpieza y normalización</h3>
+            <ul>
+                <li>Texto limpio</li>
+                <li>Conversión a mayúsculas</li>
+                <li>Eliminación de inconsistencias</li>
+            </ul>
+
+            <h3>📊 Lógica de riesgo</h3>
+            <p>Clasificación basada en días de mora:</p>
+
+            <ul>
+                <li>Mora leve: &lt; 30 días</li>
+                <li>Riesgo medio: 31 - 60 días</li>
+                <li>Riesgo alto: &gt; 60 días</li>
+            </ul>
+
+            <h3>🔢 Tipificación técnica</h3>
+            <ul>
+                <li>Fechas → tipo fecha</li>
+                <li>Valores → moneda (COP)</li>
+            </ul>
+        </section>
+
+        <!-- RESULTADO -->
+        <section class="contenedor">
+            <h2>🎯 Resultado esperado</h2>
+
+            <p>
+                Un modelo de datos limpio, estructurado y listo para alimentar el análisis,
+                garantizando trazabilidad y confiabilidad en la toma de decisiones.
+            </p>
+        </section>
+
+        <!-- NAVEGACIÓN -->
+        <section class="contenedor" style="text-align:center;">
+            <a href="modulo1.html">⬅ Módulo anterior</a> |
+            <a href="modulo3.html">Siguiente módulo ➡</a>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2026 Manual de Análisis de Datos</p>
+        </footer>
+
+    </body>
+
+    </html>
+
+    <!-- NAVEGACIÓN -->
+    <section class="contenedor" style="text-align:center;">
+        <a href="modulo1.html">⬅ Módulo anterior</a> |
+        <a href="modulo3.html">Siguiente módulo ➡</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Manual de Análisis de Datos</p>
+    </footer>
+
+</body>
+
+</html>

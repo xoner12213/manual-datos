@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 1 - Retroalimentación</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2>📊 Manual de Datos</h2>
+        <ul>
+            <li><a href="../Indexx.html">Inicio</a></li>
+            <li><a href="modulo6_prueba.html">Módulo 6</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1>📁 Retroalimentación Fase 1</h1>
+        <p>Validación de la preparación del entorno</p>
+    </header>
+
+    <!-- CONTENIDO -->
+    <section class="contenedor">
+        <h2>🧠 Objetivo</h2>
+        <p>
+            Evaluar que la estructura inicial del proyecto cumpla con los requisitos técnicos
+            exigidos para garantizar un proceso reproducible y profesional.
+        </p>
+    </section>
+
+    <section class="contenedor">
+        <h2>✅ Validaciones realizadas</h2>
+
+        <ul>
+            <li>✔ Carpeta creada correctamente</li>
+            <li>✔ Archivos CSV separados</li>
+            <li>✔ Nombres de archivos exactos</li>
+            <li>✔ Estructura lista para Power Query</li>
+        </ul>
+    </section>
+
+    <section class="contenedor">
+        <h2>⚠ Riesgos identificados</h2>
+
+        <ul>
+            <li>Modificar nombres de columnas</li>
+            <li>Editar datos manualmente</li>
+            <li>No mantener estructura reproducible</li>
+        </ul>
+    </section>
+
+    <section class="contenedor">
+        <h2>🎯 Conclusión</h2>
+        <p>
+            La Fase 1 es crítica porque define la base del modelo de datos.
+            Un error en esta etapa compromete todo el proceso ETL.
+            Crea los 5 archivos en blanco
+            La forma más segura de crear un CSV sin que Excel te dañe el formato por la configuración regional de tu
+            computador, es usando el Bloc de notas (Notepad):
+
+            Abre el Bloc de notas.
+
+            Sin escribir nada, ve a Archivo > Guardar como...
+
+            Ve a la carpeta que creaste en el Paso 1.
+
+            En "Tipo", selecciona Todos los archivos (.).
+
+            En "Nombre de archivo", escribe: clientes.csv y dale a Guardar.
+
+            Repite este mismo proceso 4 veces más para crear los archivos restantes exactamente con estos nombres:
+
+            inventario.csv
+
+            ventas_ultimos_3_meses.csv
+
+            recaudo.csv
+
+            cartera_actual.csv
+        </p>
+    </section>
+    <section class="contenedor">
+        <h2>🧠 Instrucciones para clientes.csv</h2>
+        <p>
+            Antes de analizar datos, es necesario prepararlos. Este proceso incluye:
+        </p>
+
+        <ul>
+            <li><strong>1:</strong> Abre tu archivo clientes.csv con el Bloc de Notas.</li>
+            <li><strong>2:</strong> Borra cualquier contenido que tenga y pega exactamente este bloque</li>
+            <p> ClienteID,Cliente,Ciudad,Segmento,Formalidad,LimiteCredito,PlazoDias,Canal,Activo
+                C001,Relojeria El Faro,Cartagena,A,Formal,50000000,45,Retail Especializado,SI
+                C002,Bazar Bazurto 1,Cartagena,C,Informal,8000000,15,Retail Independiente,SI
+                C003,Joyeria San Juan,Barranquilla,B,Formal,20000000,30,Retail Especializado,SI
+                C004,Distribuciones Costa,Santa Marta,A,Formal,60000000,60,Subdistribuidor,SI
+                C005,El Relojero 24H,Sincelejo,B,Formal,15000000,45,Retail Especializado,SI
+                C006,Comercial La 30,Cartagena,B,Formal,25000000,30,Retail Especializado,SI
+                C007,Joyas & Tiempo,Valledupar,B,Formal,18000000,45,Retail Especializado,SI
+                C008,Distribuidor Norte,Barranquilla,A,Formal,80000000,60,Subdistribuidor,SI
+                C009,Relojeria Central,Monteria,B,Formal,22000000,30,Retail Especializado,SI
+                C010,Bazar Popular,Cartagena,C,Informal,6000000,15,Retail Independiente,SI
+                C011,Time Shop Caribe,Barranquilla,A,Formal,45000000,45,Retail Especializado,SI
+                C012,Relojes Premium,Santa Marta,A,Formal,70000000,60,Subdistribuidor,SI
+                C013,Almacen La 15,Valledupar,B,Formal,12000000,30,Retail Especializado,SI
+                C014,Centro Joyero Norte,Cartagena,A,Formal,55000000,45,Retail Especializado,SI
+                C015,Outlet Relojero,Sincelejo,C,Informal,9000000,20,Retail Independiente,SI
+                C016,Relojeria Elite,Barranquilla,A,Formal,65000000,60,Subdistribuidor,SI
+                C017,La Esquina del Tiempo,Cartagena,B,Formal,17000000,30,Retail Especializado,SI
+                C018,Joyeria Moderna,Santa Marta,B,Formal,21000000,45,Retail Especializado,SI
+                C019,Relojes Express,Monteria,C,Informal,7500000,15,Retail Independiente,SI
+                C020,Distribuciones Andina,Barranquilla,A,Formal,90000000,60,Subdistribuidor,SI
+                C021,Relojeria Plaza Real,Cartagena,B,Formal,26000000,45,Retail Especializado,SI
+                C022,Joyas del Caribe,Valledupar,A,Formal,58000000,60,Subdistribuidor,SI
+                C023,Bazar La 30,Barranquilla,C,Informal,5000000,15,Retail Independiente,SI
+                C024,Relojeria del Centro,Santa Marta,B,Formal,19000000,30,Retail Especializado,SI
+                C025,Distribuidor Atlántico,Cartagena,A,Formal,85000000,60,Subdistribuidor,SI
+                C026,Time World,Monteria,B,Formal,20000000,30,Retail Especializado,SI
+                C027,Relojes del Norte,Barranquilla,A,Formal,62000000,45,Retail Especializado,SI
+                C028,Bazar Caribe,Cartagena,C,Informal,4000000,15,Retail Independiente,SI
+                C029,Joyeria Real,Santa Marta,B,Formal,23000000,45,Retail Especializado,SI
+                C030,Distribuciones Premium,Barranquilla,A,Formal,95000000,60,Subdistribuidor,SI
+                C031,Relojeria Universal,Cartagena,B,Formal,24000000,30,Retail Especializado,SI
+                C032,Centro Comercial Tiempo,Valledupar,A,Formal,72000000,60,Subdistribuidor,SI
+                C033,Bazar El Reloj,Monteria,C,Informal,6500000,20,Retail Independiente,SI
+                C034,Joyeria Internacional,Barranquilla,A,Formal,88000000,60,Subdistribuidor,SI
+                C035,Relojeria San Pedro,Santa Marta,B,Formal,21000000,45,Retail Especializado,SI
+                C036,Time House,Cartagena,A,Formal,54000000,45,Retail Especializado,SI
+                C037,Bazar Popular 2,Sincelejo,C,Informal,4500000,15,Retail Independiente,SI
+                C038,Relojes y Más,Barranquilla,B,Formal,28000000,30,Retail Especializado,SI
+                C039,Distribuidor Caribe Sur,Santa Marta,A,Formal,98000000,60,Subdistribuidor,SI
+                C040,Joyeria del Mar,Cartagena,B,Formal,30000000,45,Retail Especializado,SI</p>
+        </ul>
+        <li><strong>Analisis rapido</strong> Tienes clientes muy potentes en el Segmento A (como el C039 en Santa Marta
+            con 98 millones de cupo), pero también varios informales en el Segmento C. Esto será clave para el análisis
+            de riesgo de cartera más adelante. </li>
+
+    </section>
+
+    <section class="contenedor">
+        <h2>🧠 Instrucciones para inventario.csv:</h2>
+        <p>
+            Antes de analizar datos, es necesario prepararlos. Este proceso incluye:
+        </p>
+
+        <ul>
+            <li><strong>1:</strong> Abre tu archivo inventario.csv con el Bloc de Notas</li>
+            <li><strong>2:</strong> Borra cualquier contenido previo y pega exactamente este bloque</li>
+            <p>SKU,Producto,Marca,PrecioMayorista,MargenPct,Stock,AgotadoFabrica,Pareto
+                W001,G-SHOCK GA-2100,Casio,520000,0.20,18,SI,SI
+                W002,EDIFICE EFR-539,Casio,610000,0.18,12,NO,SI
+                W003,VINTAGE A168,Casio,215000,0.23,30,SI,SI
+                W004,BULOVA Classic,Bulova,1480000,0.22,6,NO,SI
+                W005,STRIKE Sport X,Strike,320000,0.20,25,NO,NO
+                W006,Casio F-91W,Casio,110000,0.18,55,NO,NO
+                W007,G-SHOCK Mudmaster,Casio,1250000,0.19,5,NO,NO
+                W008,EDIFICE Solar,Casio,980000,0.21,7,NO,NO
+                W009,Casio Vintage Gold,Casio,295000,0.24,20,NO,NO
+                W010,Bulova MarineStar,Bulova,1750000,0.20,4,NO,NO
+                W011,Casio Youth Blue,Casio,180000,0.18,40,NO,NO
+                W012,G-SHOCK Metal,Casio,1350000,0.22,3,NO,NO
+                W013,EDIFICE Chrono,Casio,890000,0.19,9,NO,NO
+                W014,Casio Digital Pro,Casio,420000,0.23,16,NO,NO
+                W015,Strike Classic,Strike,280000,0.21,30,NO,NO
+                W016,Bulova Automatic,Bulova,2100000,0.24,2,NO,NO
+                W017,G-SHOCK Neon,Casio,750000,0.20,11,NO,NO
+                W018,Casio Ladies Vintage,Casio,260000,0.22,18,NO,NO
+                W019,EDIFICE Premium,Casio,1200000,0.20,6,NO,NO
+                W020,Casio Basic Black,Casio,150000,0.17,60,NO,NO
+                W021,Bulova Sport,Bulova,1650000,0.19,5,NO,NO
+                W022,G-SHOCK Tactical,Casio,980000,0.21,8,NO,NO
+                W023,Casio Digital Silver,Casio,310000,0.22,22,NO,NO
+                W024,Strike Urban,Strike,350000,0.20,19,NO,NO
+                W025,Casio Limited Edition,Casio,1850000,0.25,1,NO,NO</p>
+        </ul>
+        <li><strong>Analisis rapido</strong> Al revisar estos datos, identifico un reto crítico para tu planeación
+            del mes de Abril. Los SKU W001 y W003 son productos de la regla de Pareto (los que históricamente rotan
+            más), pero actualmente están marcados con "SI" en la columna AgotadoFabrica. Esto es un punto clave que
+            deberemos mencionar en la defensa ante gerencia, ya que te obligará a enfocar tu estrategia de ventas en
+            los otros modelos para cumplir tus metas. </li>
+
+    </section>
+
+
+    <section class="contenedor">
+        <h2>🧠 ventas_ultimos_3_meses.csv:</h2>
+        <p>
+            Antes de analizar datos, es necesario prepararlos. Este proceso incluye:
+        </p>
+
+        <ul>
+            <p>Mes,FechaOrden,OrdenID,ClienteID,SKU,Unidades,PrecioUnit,EstadoDespacho
+                Enero,2026-01-03,O2001,C001,W001,4,520000,Entregado
+                Enero,2026-01-03,O2002,C002,W003,12,215000,Pendiente
+                Enero,2026-01-04,O2003,C003,W002,3,610000,Entregado
+                Enero,2026-01-04,O2004,C004,W004,2,1480000,Entregado
+                Enero,2026-01-05,O2005,C005,W006,15,110000,Entregado
+                Enero,2026-01-05,O2006,C006,W009,10,295000,Entregado
+                Enero,2026-01-06,O2007,C007,W014,6,420000,Entregado
+                Enero,2026-01-06,O2008,C008,W010,2,1750000,Pendiente
+                Enero,2026-01-07,O2009,C009,W020,18,150000,Entregado
+                Enero,2026-01-07,O2010,C010,W006,12,110000,Entregado
+                Enero,2026-01-08,O2011,C011,W017,5,750000,Entregado
+                Enero,2026-01-08,O2012,C012,W019,3,1200000,Entregado
+                Enero,2026-01-09,O2013,C013,W011,14,180000,Entregado
+                Enero,2026-01-09,O2014,C014,W002,4,610000,Pendiente
+                Enero,2026-01-10,O2015,C015,W003,20,215000,Entregado
+                Enero,2026-01-10,O2016,C016,W010,3,1750000,Entregado
+                Enero,2026-01-11,O2017,C017,W023,8,310000,Entregado
+                Enero,2026-01-11,O2018,C018,W008,3,980000,Pendiente
+                Enero,2026-01-12,O2019,C019,W006,18,110000,Entregado
+                Enero,2026-01-12,O2020,C020,W004,4,1480000,Entregado
+                Enero,2026-01-13,O2021,C021,W009,9,295000,Entregado
+                Enero,2026-01-13,O2022,C022,W013,4,890000,Entregado
+                Enero,2026-01-14,O2023,C023,W020,16,150000,Entregado
+                Enero,2026-01-14,O2024,C024,W014,5,420000,Pendiente
+                Enero,2026-01-15,O2025,C025,W004,3,1480000,Entregado
+                Enero,2026-01-15,O2026,C026,W006,20,110000,Entregado
+                Enero,2026-01-16,O2027,C027,W001,3,520000,Pendiente
+                Enero,2026-01-16,O2028,C028,W003,14,215000,Entregado
+                Enero,2026-01-17,O2029,C029,W018,7,260000,Entregado
+                Enero,2026-01-17,O2030,C030,W010,4,1750000,Pendiente
+                Enero,2026-01-18,O2031,C031,W002,2,610000,Entregado
+                Enero,2026-01-18,O2032,C032,W004,2,1480000,Entregado
+                Enero,2026-01-19,O2033,C033,W006,10,110000,Entregado
+                Enero,2026-01-19,O2034,C034,W016,1,2100000,Entregado
+                Enero,2026-01-20,O2035,C035,W020,14,150000,Pendiente
+                Enero,2026-01-20,O2036,C036,W022,2,980000,Entregado
+                Enero,2026-01-21,O2037,C037,W003,10,215000,Entregado
+                Enero,2026-01-21,O2038,C038,W009,6,295000,Entregado
+                Enero,2026-01-22,O2039,C039,W004,3,1480000,Pendiente
+                Enero,2026-01-22,O2040,C040,W011,12,180000,Entregado
+                Febrero,2026-02-01,O2101,C001,W003,10,215000,Entregado
+                Febrero,2026-02-01,O2102,C002,W006,12,110000,Pendiente
+                Febrero,2026-02-02,O2103,C003,W013,3,890000,Entregado
+                Febrero,2026-02-02,O2104,C004,W004,2,1480000,Entregado
+                Febrero,2026-02-03,O2105,C005,W020,18,150000,Entregado
+                Febrero,2026-02-03,O2106,C006,W014,5,420000,Entregado
+                Febrero,2026-02-04,O2107,C007,W002,3,610000,Pendiente
+                Febrero,2026-02-04,O2108,C008,W010,2,1750000,Entregado
+                Febrero,2026-02-05,O2109,C009,W009,8,295000,Entregado
+                Febrero,2026-02-05,O2110,C010,W003,16,215000,Entregado
+                Febrero,2026-02-06,O2111,C011,W001,3,520000,Pendiente
+                Febrero,2026-02-06,O2112,C012,W019,2,1200000,Entregado
+                Febrero,2026-02-07,O2113,C013,W011,10,180000,Entregado
+                Febrero,2026-02-07,O2114,C014,W017,4,750000,Entregado
+                Febrero,2026-02-08,O2115,C015,W006,18,110000,Pendiente
+                Febrero,2026-02-08,O2116,C016,W021,2,1650000,Entregado
+                Febrero,2026-02-09,O2117,C017,W023,6,310000,Entregado
+                Febrero,2026-02-09,O2118,C018,W008,2,980000,Entregado
+                Febrero,2026-02-10,O2119,C019,W020,20,150000,Entregado
+                Febrero,2026-02-10,O2120,C020,W004,3,1480000,Pendiente
+                Febrero,2026-02-11,O2121,C021,W002,3,610000,Entregado
+                Febrero,2026-02-11,O2122,C022,W010,2,1750000,Entregado
+                Febrero,2026-02-12,O2123,C023,W006,14,110000,Entregado
+                Febrero,2026-02-12,O2124,C024,W014,4,420000,Pendiente
+                Febrero,2026-02-13,O2125,C025,W004,2,1480000,Entregado
+                Febrero,2026-02-13,O2126,C026,W009,7,295000,Entregado
+                Febrero,2026-02-14,O2127,C027,W003,12,215000,Entregado
+                Febrero,2026-02-14,O2128,C028,W006,16,110000,Pendiente
+                Febrero,2026-02-15,O2129,C029,W018,6,260000,Entregado
+                Febrero,2026-02-15,O2130,C030,W010,3,1750000,Entregado
+                Febrero,2026-02-16,O2131,C031,W002,3,610000,Entregado
+                Febrero,2026-02-16,O2132,C032,W004,2,1480000,Pendiente
+                Febrero,2026-02-17,O2133,C033,W020,12,150000,Entregado
+                Febrero,2026-02-17,O2134,C034,W016,1,2100000,Entregado
+                Febrero,2026-02-18,O2135,C035,W006,12,110000,Entregado
+                Febrero,2026-02-18,O2136,C036,W022,2,980000,Pendiente
+                Febrero,2026-02-19,O2137,C037,W003,8,215000,Entregado
+                Febrero,2026-02-19,O2138,C038,W014,4,420000,Entregado
+                Febrero,2026-02-20,O2139,C039,W004,3,1480000,Entregado
+                Febrero,2026-02-20,O2140,C040,W011,10,180000,Pendiente
+                Marzo,2026-03-02,O2201,C001,W004,1,1480000,Entregado
+                Marzo,2026-03-02,O2202,C002,W003,10,215000,Entregado
+                Marzo,2026-03-03,O2203,C003,W002,4,610000,Pendiente
+                Marzo,2026-03-03,O2204,C004,W010,2,1750000,Entregado
+                Marzo,2026-03-04,O2205,C005,W006,20,110000,Entregado
+                Marzo,2026-03-04,O2206,C006,W009,8,295000,Entregado
+                Marzo,2026-03-05,O2207,C007,W014,5,420000,Pendiente
+                Marzo,2026-03-05,O2208,C008,W004,2,1480000,Entregado
+                Marzo,2026-03-06,O2209,C009,W020,22,150000,Entregado
+                Marzo,2026-03-06,O2210,C010,W006,14,110000,Entregado
+                Marzo,2026-03-07,O2211,C011,W017,4,750000,Entregado
+                Marzo,2026-03-07,O2212,C012,W019,2,1200000,Pendiente
+                Marzo,2026-03-08,O2213,C013,W011,12,180000,Entregado
+                Marzo,2026-03-08,O2214,C014,W002,4,610000,Entregado
+                Marzo,2026-03-09,O2215,C015,W003,16,215000,Pendiente
+                Marzo,2026-03-09,O2216,C016,W010,2,1750000,Entregado
+                Marzo,2026-03-10,O2217,C017,W023,8,310000,Entregado
+                Marzo,2026-03-10,O2218,C018,W008,2,980000,Entregado
+                Marzo,2026-03-11,O2219,C019,W006,16,110000,Pendiente
+                Marzo,2026-03-11,O2220,C020,W004,3,1480000,Entregado
+                Marzo,2026-03-12,O2221,C021,W009,8,295000,Entregado
+                Marzo,2026-03-12,O2222,C022,W013,3,890000,Entregado
+                Marzo,2026-03-13,O2223,C023,W020,14,150000,Entregado
+                Marzo,2026-03-13,O2224,C024,W014,4,420000,Pendiente
+                Marzo,2026-03-14,O2225,C025,W004,2,1480000,Entregado
+                Marzo,2026-03-14,O2226,C026,W006,18,110000,Entregado
+                Marzo,2026-03-15,O2227,C027,W001,2,520000,Pendiente
+                Marzo,2026-03-15,O2228,C028,W003,12,215000,Entregado
+                Marzo,2026-03-16,O2229,C029,W018,7,260000,Entregado
+                Marzo,2026-03-16,O2230,C030,W010,3,1750000,Pendiente
+                Marzo,2026-03-17,O2231,C031,W002,3,610000,Entregado
+                Marzo,2026-03-17,O2232,C032,W004,2,1480000,Entregado
+                Marzo,2026-03-18,O2233,C033,W006,12,110000,Entregado
+                Marzo,2026-03-18,O2234,C034,W016,1,2100000,Pendiente
+                Marzo,2026-03-19,O2235,C035,W020,16,150000,Entregado
+                Marzo,2026-03-19,O2236,C036,W022,2,980000,Entregado
+                Marzo,2026-03-20,O2237,C037,W003,10,215000,Pendiente
+                Marzo,2026-03-20,O2238,C038,W009,6,295000,Entregado
+                Marzo,2026-03-21,O2239,C039,W004,3,1480000,Entregado
+                Marzo,2026-03-21,O2240,C040,W011,12,180000,Pendiente</p>
+        </ul>
+        <li><strong>Analisis</strong>
+            <p>Guardando balas para nuestra defensa gerencial y la hoja de ANALISIS. Al cruzar
+                visualmente estos datos con tu inventario, detecto lo siguiente:
+
+                Alerta Operativa (Despachos Pendientes): Tenemos un volumen altísimo de órdenes marcadas como Pendiente.
+                Recuerda la regla de oro del negocio: "Ventas sin recaudo no cuentan como éxito comercial". Si no se
+                despacha, no se factura, y si no se factura, no hay comisión del 2%. En el plan de Abril tendremos que
+                proponer un seguimiento a logística. </p>
+        </li>
+        <li><strong>Confirmación del Agotamiento:</strong>
+            <p>Efectivamente, durante el Q1 (enero-marzo) estuviste vendiendo las referencias
+                W001 y W003 de manera sostenida. Esto confirma por qué ahora aparecen como AgotadoFabrica en el
+                inventario.
+                En nuestro informe ejecutivo diremos: "El éxito de ventas de los SKUs W001 y W003 durante el Q1 derivó
+                en un
+                quiebre de stock en fábrica, por lo cual el plan de abril pivotará hacia el impulso del SKU W006 (Casio
+                F-91W), del cual tenemos 55 unidades estancadas". ¡Eso suena a música para los oídos de un gerente!</p>
+        </li>
+
+    </section>
+
+    <section class="contenedor">
+
+        <h2>🧠 recaudo.csv:</h2>
+        <p>
+            Antes de analizar datos, es necesario prepararlos. Este proceso incluye:
+        </p>
+
+        <p>
+            RecaudoID,FechaRecaudo,OrdenID,ClienteID,ValorRecaudo,Medio,Estado
+            R3001,2026-01-20,O2001,C001,1040000,Transferencia,Aplicado
+            R3002,2026-01-25,O2003,C003,1830000,Transferencia,Aplicado
+            R3003,2026-01-28,O2004,C004,2960000,Transferencia,Aplicado
+            R3004,2026-01-22,O2005,C005,1650000,Transferencia,Aplicado
+            R3005,2026-01-25,O2006,C006,2950000,Transferencia,Aplicado
+            R3006,2026-01-28,O2009,C009,2700000,Efectivo,Aplicado
+            R3007,2026-01-29,O2010,C010,1320000,Transferencia,Aplicado
+            R3008,2026-02-02,O2011,C011,3750000,Transferencia,Aplicado
+            R3009,2026-02-03,O2012,C012,3600000,Transferencia,Aplicado
+            R3010,2026-02-05,O2013,C013,2520000,Transferencia,Aplicado
+            R3011,2026-02-06,O2015,C015,4300000,Transferencia,Aplicado
+            R3012,2026-02-08,O2016,C016,5250000,Transferencia,Aplicado
+            R3013,2026-02-10,O2017,C017,2480000,Transferencia,Aplicado
+            R3014,2026-02-12,O2019,C019,1980000,Transferencia,Aplicado
+            R3015,2026-02-15,O2020,C020,5920000,Transferencia,Aplicado
+            R3016,2026-02-18,O2021,C021,2655000,Transferencia,Aplicado
+            R3017,2026-02-20,O2022,C022,3560000,Transferencia,Aplicado
+            R3018,2026-02-22,O2023,C023,2400000,Transferencia,Aplicado
+            R3019,2026-02-25,O2025,C025,4440000,Transferencia,Aplicado
+            R3020,2026-02-27,O2026,C026,2200000,Transferencia,Aplicado
+            R3021,2026-03-01,O2028,C028,3010000,Transferencia,Aplicado
+            R3022,2026-03-03,O2029,C029,1820000,Transferencia,Aplicado
+            R3023,2026-03-05,O2031,C031,1220000,Transferencia,Aplicado
+            R3024,2026-03-07,O2032,C032,2960000,Transferencia,Aplicado
+            R3025,2026-03-10,O2033,C033,1100000,Transferencia,Aplicado
+            R3026,2026-03-12,O2034,C034,2100000,Transferencia,Aplicado
+            R3027,2026-03-15,O2036,C036,1960000,Transferencia,Aplicado
+            R3028,2026-03-17,O2037,C037,2150000,Transferencia,Aplicado
+            R3029,2026-03-20,O2038,C038,1770000,Transferencia,Aplicado
+            R3030,2026-03-22,O2040,C040,2160000,Transferencia,Aplicado
+            R3031,2026-03-25,O2101,C001,2150000,Transferencia,Aplicado
+            R3032,2026-03-27,O2103,C003,2670000,Transferencia,Aplicado
+            R3033,2026-03-29,O2104,C004,2960000,Transferencia,Aplicado
+            R3034,2026-04-02,O2106,C006,2100000,Transferencia,Aplicado
+            R3035,2026-04-05,O2108,C008,3500000,Transferencia,Aplicado
+            R3036,2026-04-07,O2109,C009,2360000,Transferencia,Aplicado
+            R3037,2026-04-10,O2110,C010,3440000,Transferencia,Aplicado
+            R3038,2026-04-12,O2112,C012,2400000,Transferencia,Aplicado
+            R3039,2026-04-15,O2113,C013,1800000,Transferencia,Aplicado
+            R3040,2026-04-18,O2114,C014,3000000,Transferencia,Aplicado
+            R3041,2026-04-20,O2116,C016,3300000,Transferencia,Aplicado
+            R3042,2026-04-22,O2117,C017,1860000,Transferencia,Aplicado
+            R3043,2026-04-25,O2118,C018,1960000,Transferencia,Aplicado
+            R3044,2026-04-28,O2119,C019,3000000,Transferencia,Aplicado
+            R3045,2026-04-30,O2121,C021,1830000,Transferencia,Aplicado
+        </p>
+        <li><strong>Analisis</strong>
+            <p>Al observar este bloque de datos, saltan a la vista elementos críticos para tu defensa:
+                La trampa del trimestre (Efecto Abril): Aquí está el "cascarito" técnico de la prueba. Si observas los
+                registros del R3034 en adelante, verás que corresponden a facturas de febrero (ej. O2106), pero la fecha
+                de recaudo es en Abril (ej. 2026-04-02). Dado que tu evaluación es sobre las comisiones del Trimestre 1
+                (Enero - Marzo), estos recaudos de abril no deben entrar en la base de tu comisión actual, aunque la
+                venta se haya hecho en el Q1. En Power Query aplicaremos un filtro estricto de fechas (<= 31 de marzo)
+                    para demostrarle a gerencia que dominas el corte financiero.</p>
+        </li>
+        <li><strong>Comportamiento de Pagos</strong>
+            <p>Gran parte de los clientes están utilizando el medio de "Transferencia", lo cual es excelente para la
+                liquidez de la empresa, pero los tiempos de pago se están extendiendo. Hay ventas de inicios de enero
+                que se recaudaron a finales de ese mes, o ventas de febrero recaudadas en abril. En tu propuesta puedes
+                incluir un "Plan de incentivo por pronto pago para reducir los días de cartera".</p>
+        </li>
+    </section>
+
+    <section class="contenedor">
+        <h2> cartera_actual.csv:</h2>
+
+        <p>ClienteID,SaldoPendiente,DiasDesdeFactura,UltimoContacto,CompromisoPago,ValorCompromiso
+            C001,4200000,28,2026-03-20,SI,1500000
+            C002,1800000,55,2026-03-10,NO,0
+            C003,2600000,18,2026-03-25,SI,1200000
+            C004,6500000,72,2026-03-01,NO,0
+            C005,1100000,9,2026-03-28,SI,600000
+            C006,2200000,40,2026-03-14,SI,800000
+            C007,1750000,33,2026-03-18,NO,0
+            C008,7200000,80,2026-02-20,NO,0
+            C009,1900000,21,2026-03-22,SI,900000
+            C010,900000,45,2026-03-05,NO,0
+            C011,3100000,14,2026-03-29,SI,1200000
+            C012,5400000,60,2026-03-02,NO,0
+            C013,1200000,12,2026-03-27,SI,500000
+            C014,2800000,26,2026-03-24,SI,1000000
+            C015,2400000,65,2026-03-08,NO,0
+            C016,5000000,35,2026-03-16,SI,1500000
+            C017,1600000,19,2026-03-26,SI,700000
+            C018,2100000,22,2026-03-21,NO,0
+            C019,1300000,48,2026-03-09,NO,0
+            C020,6800000,75,2026-02-28,NO,0
+            C021,2500000,30,2026-03-19,SI,900000
+            C022,4700000,58,2026-03-04,NO,0
+            C023,800000,44,2026-03-11,NO,0
+            C024,1500000,27,2026-03-23,SI,600000
+            C025,5900000,70,2026-03-01,NO,0
+            C026,1200000,16,2026-03-27,SI,500000
+            C027,2100000,36,2026-03-15,NO,0
+            C028,1700000,52,2026-03-10,NO,0
+            C029,1400000,20,2026-03-25,SI,600000
+            C030,6300000,78,2026-02-25,NO,0
+            C031,900000,11,2026-03-29,SI,300000
+            C032,5200000,64,2026-03-03,NO,0
+            C033,1100000,23,2026-03-21,SI,400000
+            C034,7400000,82,2026-02-22,NO,0
+            C035,2000000,32,2026-03-18,NO,0
+            C036,2600000,25,2026-03-24,SI,900000
+            C037,700000,49,2026-03-09,NO,0
+            C038,1500000,17,2026-03-26,SI,500000
+            C039,6900000,76,2026-02-27,NO,0
+            C040,1800000,41,2026-03-13,NO,0</p>
+        <li><strong>Analisis</strong>
+            <p>Alarma de Cartera Morosa (> 60 días): Hay clientes que presentan un riesgo crítico para la compañía. Por
+                ejemplo, el C008 (80 días, 7.2M), C034 (82 días, 7.4M), y el C020 (75 días, 6.8M). Tienen deudas altas,
+                muy antiguas y, lo peor, están marcados con NO en CompromisoPago.</p>
+            <p>Plan de Acción Gerencial para Abril: Tu informe debe proponer una "Campaña de Choque de Recaudo". Al
+                gerente le diremos: "He detectado un bloque de cartera morosa de más de 60 días sin compromiso de pago.
+                Durante la primera semana de abril, el 40% de mi gestión comercial estará dedicada exclusivamente a
+                renegociar con estos clientes o escalar el caso a cobro jurídico si es necesario".</p>
+        </li>
+    </section>
+    <section class="contenedor">
+        <h2>¿Qué datos limpié exactamente?</h2>
+
+        <li><strong>En ventas_ultimos_3_meses.csv:<strong>
+                    <p> Reparé saltos de línea irregulares y un problema grave de estructura (había
+                        registros de marzo incrustados en medio del bloque de febrero). Al alinear los saltos de línea,
+                        aseguramos
+                        que cada registro de venta ocupe exactamente una fila y no se desborde a la siguiente.</p>
+        </li>
+        <li><strong>En recaudo.csv:</strong>
+            <p> Eliminé puntos erróneos sueltos que venían colados en el texto original y arreglé filas que
+                se habían fusionado por saltos de carro (enters) mal puestos.</p>
+        </li>
+        <li><strong>En cartera_actual.csv:</strong>
+            <p> Hice la corrección estructural más crítica. Tu archivo venía delimitado por punto y
+                coma (;) en lugar de comas, y tenía la palabra "cartera_actual" duplicada y atravesada al principio.
+                Cambié
+                todos los punto y coma por comas (,) para estandarizarlo con los otros cuatro archivos. Si dejábamos un
+                archivo con ; y los demás con ,, Power Query habría arrojado errores de delimitador al intentar
+                consolidar
+                la carpeta.</p>
+        </li>
+
+        <h2>¿Por qué plasmamos la información en el Bloc de Notas?</h2>
+        <li><strong>Texto Plano y Puro:</strong>
+            <p>El Bloc de Notas es un editor de texto sin formato. Al copiar datos de una web, un chat, un PDF o un
+                correo, estos suelen arrastrar "basura invisible" (códigos HTML, formatos de fuente, colores,
+                tabulaciones raras). El Bloc de Notas elimina toda esa basura inmediatamente.</p>
+        </li>
+        <li><strong>Estructura CSV Real:</strong>
+            <p>Al pegar los datos allí y guardarlos con la extensión .csv (Valores Separados por Comas), obligamos al
+                sistema a generar un archivo de base de datos en su estado más primitivo y limpio.</p>
+        </li>
+        <li><strong>Estabilidad para Power Query:</strong>
+            <p>Power Query es una herramienta muy potente, pero es estricta. Si intentas cargar un Excel mal formateado,
+                a veces intenta "adivinar" los formatos de celda y se equivoca. Al entregarle archivos CSV puros desde
+                el Bloc de Notas, le facilitamos el trabajo de lectura y evitamos que columnas enteras aparezcan con
+                errores (Error) o valores nulos (Null). Usar el Bloc de Notas fue nuestro filtro purificador para
+                garantizar que el modelo de datos no fallara al primer intento.</p>
+        </li>
+
+
+
+
+    </section>
+
+
+    <!-- NAVEGACIÓN -->
+    <section class="contenedor" style="text-align:center;">
+        <a href="modulo6_prueba.html">⬅ Volver al módulo 6</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Manual de Análisis de Datos</p>
+    </footer>
+
+</body>
+
+</html>

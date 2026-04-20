@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3 - Análisis de Cartera</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2>📊 Manual de Datos</h2>
+        <ul>
+            <li><a href="../Indexx.html">Inicio</a></li>
+            <li><a href="../index.html#modulos">Módulos</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1>Módulo 3: Análisis de Cartera y Riesgo</h1>
+        <p>Clasificación de clientes y gestión del riesgo financiero</p>
+    </header>
+
+    <!-- INTRO -->
+    <section class="contenedor">
+        <h2>🧠 Enfoque del módulo</h2>
+        <p>
+            Este módulo aborda el análisis de cartera como eje central de la gestión comercial,
+            permitiendo identificar riesgos, priorizar clientes y optimizar el flujo de caja.
+        </p>
+    </section>
+
+    <!-- CLASIFICACIÓN -->
+    <section class="contenedor">
+        <h2>📊 Clasificación de clientes en buckets de mora</h2>
+
+        <p>
+            La clasificación de los clientes en los buckets de mora se realiza mediante una lógica
+            condicional procesada en Power Query, basada en los días transcurridos desde la facturación
+            (DiasDesdeFactura) y la existencia de compromisos de pago.
+        </p>
+
+        <h3>📌 Criterios de clasificación</h3>
+
+        <ul>
+            <li><strong>Mora Leve:</strong> Clientes con deudas de menos de 30 días</li>
+            <li><strong>Riesgo Medio:</strong> Clientes con deudas entre 31 y 60 días</li>
+            <li><strong>Riesgo muy alto / Jurídico:</strong> Deudas mayores a 60 días o sin compromiso de pago</li>
+        </ul>
+    </section>
+
+    <!-- VALORES -->
+    <section class="contenedor">
+        <h2>💰 Distribución de la cartera por rangos</h2>
+
+        <p>
+            Para el análisis financiero, los datos se agrupan en tres rangos principales de mora:
+        </p>
+
+        <ul>
+            <li><strong>0 - 30 días:</strong> $33.300.000</li>
+            <li><strong>31 - 61 días:</strong> $32.150.000</li>
+            <li><strong>62 - 92 días:</strong> $54.600.000</li>
+        </ul>
+
+        <p>
+            El rango de 62 a 92 días representa el nivel de mayor riesgo y concentración de cartera.
+        </p>
+    </section>
+
+    <!-- INTERPRETACIÓN -->
+    <section class="contenedor">
+        <h2>📉 Interpretación financiera</h2>
+
+        <p>
+            La concentración de cartera en los rangos de mayor mora indica un riesgo significativo
+            para el flujo de caja de la operación.
+        </p>
+
+        <ul>
+            <li>La liquidez se encuentra comprometida</li>
+            <li>El recaudo efectivo está por debajo del potencial</li>
+            <li>Las comisiones se ven afectadas directamente</li>
+        </ul>
+    </section>
+
+    <!-- IMPACTO -->
+    <section class="contenedor">
+        <h2>🚨 Impacto en la comisión</h2>
+
+        <p>
+            Dado que la comisión depende exclusivamente del recaudo efectivo, la acumulación de cartera
+            en mora implica que los ingresos del asesor están "congelados".
+        </p>
+
+        <p>
+            Las fuentes indican que recuperar la cartera en los rangos superiores a 60 días permitiría
+            duplicar la comisión actual.
+        </p>
+    </section>
+
+    <!-- ESTRATEGIA -->
+    <section class="contenedor">
+        <h2>🎯 Implicación estratégica</h2>
+
+        <p>
+            Este análisis define la prioridad de la gestión comercial:
+        </p>
+
+        <ul>
+            <li>Priorizar clientes en mora alta</li>
+            <li>Ejecutar estrategias de recuperación inmediata</li>
+            <li>Enfocar esfuerzos en flujo de caja, no en ventas nuevas</li>
+        </ul>
+    </section>
+
+    <!-- NAVEGACIÓN -->
+    <section class="contenedor" style="text-align:center;">
+        <a href="modulo2.html">⬅ Módulo anterior</a> |
+        <a href="modulo4.html">Siguiente módulo ➡</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Manual de Análisis de Datos</p>
+    </footer>
+
+</body>
+
+</html>
